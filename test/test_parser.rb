@@ -3,7 +3,7 @@ require "helper"
 module Predicator
   class TestParser < Minitest::Test
     def setup
-      @parser = Parser.new
+      @parser = HandParser.new
     end
 
     def test_true

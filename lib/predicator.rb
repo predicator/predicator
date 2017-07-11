@@ -2,6 +2,8 @@ require "predicator/context"
 require "predicator/evaluator"
 require "predicator/parser"
 
+require "predicator/hand_parser"
+
 module Predicator
   def self.parse source
     Predicator::Parser.new.parse source

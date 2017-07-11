@@ -19,6 +19,6 @@ task parser: :lexer do
   sh "racc -l -o lib/predicator/parser.rb lib/predicator/parser.y"
 end
 
-task test: :parser
+#task test: :parser
 
 task default: :test
