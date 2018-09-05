@@ -1,5 +1,9 @@
 class Predicator::Parser
 
+prechigh
+  right BANG AND OR
+preclow
+
 options no_result_var
 
 token TRUE FALSE LPAREN RPAREN LBRACKET RBRACKET
