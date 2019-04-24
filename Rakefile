@@ -3,6 +3,8 @@ require "bundler/gem_tasks"
 require "rake/testtask"
 require "oedipus_lex"
 
+Rake.add_rakelib "lib/tasks"
+
 Rake.application.rake_require "oedipus_lex"
 
 Rake::TestTask.new :test do |t|
