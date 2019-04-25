@@ -4,7 +4,8 @@ module Predicator
   class Evaluator
     attr_reader :instructions, :stack, :context
 
-    def initialize instructions, context_data={}
+    def initialize instructions, context_data=nil
+      context_data = {} if context_data.nil?
       @instructions = instructions
       @context = context_for context_data
       @stack = []
